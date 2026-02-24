@@ -2,8 +2,7 @@ import styles from './index.module.css';
 
 export const Header = () => {
   return (
-  <header className={styles.root}>
-    
-  </header>
-)
+    <header className={styles.root}>
+    </header>
+  )
 };
