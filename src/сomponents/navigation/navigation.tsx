@@ -1,7 +1,7 @@
 import { Link, type LinkProps } from "../link/link";
 import styles from "./navigation.module.css";
 
-export type NavigationProps = {};
+
 
 const routes: LinkProps[] = [
   {
@@ -22,7 +22,7 @@ const routes: LinkProps[] = [
   },
 ];
 
-export const Navigation = ({}: NavigationProps) => {
+export const Navigation = () => {
   return (
     <nav className={styles.links}>
       <ul className={styles.navigation}>
