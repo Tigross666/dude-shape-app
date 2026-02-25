@@ -6,11 +6,12 @@
  */
 interface ButtonProps {
     name?: string
+    className?: string
 }
 
-export const Button = ({ name = 'Tigran' }: ButtonProps) => {
+export const Button = ({ name = 'Explore more', className }: ButtonProps) => {
     return (
-        <button>
+        <button className={className}>
             {name}
         </button>
     )

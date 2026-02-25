@@ -1,0 +1,22 @@
+.description {
+  display: flex;
+  height: 560px;
+  text-align: left;
+}
+
+.descriptionText {
+  background-color: #154444;
+  font-size: 30px;
+  padding: 80px 100px;
+  color: white;
+}
+
+.descriptionTextParagraph {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.descriptionText button {
+  width: 172px;
+  height: 56px;
+}
