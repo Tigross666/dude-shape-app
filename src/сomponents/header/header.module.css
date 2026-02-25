@@ -1,0 +1,21 @@
+.root {
+  padding: 44px 120px 44px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  color: #244d4d;
+  flex-shrink: 0;
+}
+
+.tools {
+  display: flex;
+  gap: 26px;
+  flex-shrink: 0;
+}
