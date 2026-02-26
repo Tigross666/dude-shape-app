@@ -1,17 +1,15 @@
+import styles from "./button.module.css"
 
-/**
- * Это называется интерфейс, он используется для описания типов. 
- * В данном случае описываем типы пропсов, которые принимает Button 
- * name? - вопросительный знак означает что пропс опциональный (неоязательный)
- */
 interface ButtonProps {
     name?: string
-    className?: string
+    size: 'small' | 'medium' | 'large' 
+    presets: 'dark' | 'light'
+    
 }
 
-export const Button = ({ name = 'Explore more', className }: ButtonProps) => {
+export const Button = ({ name, size, presets }: ButtonProps) => {
     return (
-        <button className={className}>
+        <button className={`${styles.root} ${styles[size]} ${presets ? styles[presets] : ''}`}>
             {name}
         </button>
     )

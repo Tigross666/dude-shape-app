@@ -7,16 +7,16 @@ export const Description = () => {
   return (
     <div className={styles.description}>
         <img className={styles.chair} src={chairImage} alt="chair" />
-        <div className={styles.descriptionText}>
-            <h1 className={styles.descriptionTextTitle}>
+        <div className={styles.text}>
+            <h1>
                 We Help You Make Modern Furniture
             </h1>
-            <p className={styles.descriptionTextParagraph}>
+            <p className={styles.paragraph}>
                 All of our furniture uses the best materials and 
                 choices for our customers.All of our furniture uses 
                 the best materials
             </p>
-            <Button className={styles.descriptionButton} />
+            <Button name="Explore more" size="medium" presets="light"/>
         </div>
     </div>
   )
