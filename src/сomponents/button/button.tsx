@@ -1,5 +1,6 @@
 import type { ReactNode } from "react"
 import styles from "./button.module.css"
+import type { PropsWithChildren } from "react"
 
 
 interface ButtonProps {
@@ -9,7 +10,7 @@ interface ButtonProps {
     
 }
 
-export const Button = ({ children, size='small', presets='light' }: ButtonProps) => {
+export const Button = ({ children, size='small', presets='light' }: PropsWithChildren <ButtonProps>) => {
     return (
         <button className={`${styles.root} ${styles[size]} ${styles[presets]}`}>
             {children}
