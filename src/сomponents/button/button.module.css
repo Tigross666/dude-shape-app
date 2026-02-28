@@ -1,32 +1,32 @@
 .root {
-    background-color: black;
-    border: none;
+  background-color: black;
+  border: none;
 }
 
 .small {
-    font-size: 12px;
-    line-height: 21px;
-    padding: 5px 14px;
+  font-size: 12px;
+  line-height: 21px;
+  padding: 5px 14px;
 }
 
 .medium {
-    font-size: 16px;
-    line-height: 22px;
-    padding: 15px 30px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 30px;
 }
 
 .large {
-    font-size: 20px;
-    line-height: 25px;
-    padding: 15px 25;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 15px 25;
 }
 
 .dark {
-background-color: #244D4D;
-color: FFFFFF;
+  background-color: #244d4d;
+  color: FFFFFF;
 }
 
 .light {
-background-color: #FFFFFF;
-color: #154444;
+  background-color: #ffffff;
+  color: #154444;
 }

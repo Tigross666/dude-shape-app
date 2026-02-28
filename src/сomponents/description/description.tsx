@@ -16,7 +16,9 @@ export const Description = () => {
                 choices for our customers.All of our furniture uses 
                 the best materials
             </p>
-            <Button name="Explore more" size="medium" presets="light"/>
+            <Button  size="medium" presets="light">
+                Explore more
+            </Button>
         </div>
     </div>
   )
