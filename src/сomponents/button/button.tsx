@@ -1,17 +1,19 @@
+import type { ReactNode } from "react"
+import styles from "./button.module.css"
+import type { PropsWithChildren } from "react"
 
-/**
- * Это называется интерфейс, он используется для описания типов. 
- * В данном случае описываем типы пропсов, которые принимает Button 
- * name? - вопросительный знак означает что пропс опциональный (неоязательный)
- */
+
 interface ButtonProps {
-    name?: string
+    children: ReactNode
+    size?: 'small' | 'medium' | 'large' 
+    presets?: 'dark' | 'light'
+    
 }
 
-export const Button = ({ name = 'Tigran' }: ButtonProps) => {
+export const Button = ({ children, size='small', presets='light' }: PropsWithChildren <ButtonProps>) => {
     return (
-        <button>
-            {name}
+        <button className={`${styles.root} ${styles[size]} ${styles[presets]}`}>
+            {children}
         </button>
     )
 }
