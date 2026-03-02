@@ -1,0 +1,43 @@
+.sofa {
+  display: flex;
+  margin-top: 140px;
+  justify-content: space-between;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 436px;
+  height: 517px;
+}
+
+.name {
+  margin: 0;
+  color: #244d4d;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+.elements {
+  display: flex;
+  gap: 28px;
+}
+
+.elementIcons {
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 0px;
+  color: #244d4d;
+}
+
+.paragraph {
+  font-size: 18px;
+  margin-top: 14px;
+}
