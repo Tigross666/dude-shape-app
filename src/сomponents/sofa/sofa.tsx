@@ -1,10 +1,15 @@
 import { Icon } from "../icon/icon";
+import FeatureItem from "../featureItem/featureItem";
 import styles from "./sofa.module.css";
+import sofa from "../../assets/sofa.png";
+import shield from "../../assets/shield.svg";
+import tick from "../../assets/tick.svg";
+import truck from "../../assets/truck.svg";
 
 export const Sofa = () => {
   return (
     <div className={styles.sofa}>
-      <Icon name="sofa"/>
+      <Icon src={sofa} alt="sofa" />
 
       <div>
         <div>
@@ -17,44 +22,26 @@ export const Sofa = () => {
         </div>
 
         <div className={styles.information}>
-          <div className={styles.elements}>
-            <div className={styles.elementIcons}>
-              <Icon name="shield"/>
-            </div>
-            <div>
-              <h2 className={styles.title}>Best Quality</h2>
-              <p className={styles.paragraph}>
-                All of our furniture uses the best <br />
-                materials and choices
-              </p>
-            </div>
-          </div>
+          <FeatureItem
+            icon={shield}
+            alt="shield"
+            title="Best Quality"
+            description="All of our furniture uses the best materials and choices"
+          />
 
-          <div className={styles.elements}>
-            <div className={styles.elementIcons}>
-              <Icon name="tick"/>
-            </div>
-            <div>
-              <h2 className={styles.title}>100% Secure</h2>
-              <p className={styles.paragraph}>
-                All of our furniture uses the best <br />
-                materials and choices
-              </p>
-            </div>
-          </div>
+          <FeatureItem
+            icon={tick}
+            alt="tick"
+            title="100% Secure"
+            description="All of our furniture uses the best materials and choices"
+          />
 
-          <div className={styles.elements}>
-            <div className={styles.elementIcons}>
-              <Icon name="truck"/>
-            </div>
-            <div>
-              <h2 className={styles.title}>Free Shpping</h2>
-              <p className={styles.paragraph}>
-                All of our furniture uses the best <br />
-                materials and choices
-              </p>
-            </div>
-          </div>
+          <FeatureItem
+            icon={truck}
+            alt="truck"
+            title="Free Shipping"
+            description="All of our furniture uses the best materials and choices"
+          />
         </div>
       </div>
     </div>

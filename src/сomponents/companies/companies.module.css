@@ -3,8 +3,7 @@
   text-align: center;
   font-size: 32px;
   color: #244d4d;
-  margin-inline: auto;
-  margin-top: 140px;
+  margin: 140px auto;
 }
 
 .logos {
@@ -12,6 +11,5 @@
   justify-content: center;
   align-items: center;
   gap: 100px;
-  margin-inline: auto;
-  margin-top: 40px;
+  margin: 40px auto;
 }

@@ -1,4 +1,5 @@
 import { Icon } from "../icon/icon";
+import { ICONS } from "./constants";
 import styles from "./companies.module.css";
 
 export const Companies = () => {
@@ -7,12 +8,9 @@ export const Companies = () => {
       <h2 className={styles.title}>Trusted by 20,000+ companies</h2>
 
       <div className={styles.logos}>
-        <Icon name="mastercard" />
-        <Icon name="airbnb" />
-        <Icon name="uber" />
-        <Icon name="paypal" />
-        <Icon name="visa" />
-        <Icon name="stripe" />
+        {ICONS.map((el) => {
+          return <Icon src={el.src} alt={el.alt} />;
+        })}
       </div>
     </div>
   );

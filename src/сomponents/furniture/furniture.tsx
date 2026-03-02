@@ -1,6 +1,8 @@
 import styles from "./furniture.module.css";
-import vectorLeftIcon from "../../assets/left_vector.svg";
-import vectorRightIcon from "../../assets/right_vector.svg";
+import { Icon } from "../icon/icon";
+import { Button } from "../button/button";
+import vectorLeft from "../../assets/left_vector.svg";
+import vectorRight from "../../assets/right_vector.svg";
 
 export const Furniture = () => {
   return (
@@ -15,12 +17,12 @@ export const Furniture = () => {
       </div>
 
       <div className={styles.vector}>
-        <button className={styles.left}>
-          <img src={vectorLeftIcon} alt="vector left" />
-        </button>
-        <button className={styles.right}>
-          <img src={vectorRightIcon} alt="vector right" />
-        </button>
+        <Button size="vector" presets="custom">
+          <Icon src={vectorLeft} alt="vector left" />
+        </Button>
+        <Button size="vector" presets="custom">
+          <Icon src={vectorRight} alt="vector right" />
+        </Button>
       </div>
     </div>
   );

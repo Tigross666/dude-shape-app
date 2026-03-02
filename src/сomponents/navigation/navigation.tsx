@@ -1,8 +1,6 @@
 import { Link, type LinkProps } from "../link/link";
 import styles from "./navigation.module.css";
 
-
-
 const routes: LinkProps[] = [
   {
     href: "#",
