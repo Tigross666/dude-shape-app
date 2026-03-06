@@ -1,10 +1,8 @@
 import { Icon } from "../icon/icon";
 import FeatureItem from "../featureItem/featureItem";
+import { ITEMS } from "../sofa/constants"
 import styles from "./sofa.module.css";
 import sofa from "../../assets/sofa.png";
-import shield from "../../assets/shield.svg";
-import tick from "../../assets/tick.svg";
-import truck from "../../assets/truck.svg";
 
 export const Sofa = () => {
   return (
@@ -22,26 +20,15 @@ export const Sofa = () => {
         </div>
 
         <div className={styles.information}>
-          <FeatureItem
-            icon={shield}
-            alt="shield"
-            title="Best Quality"
-            description="All of our furniture uses the best materials and choices"
-          />
-
-          <FeatureItem
-            icon={tick}
-            alt="tick"
-            title="100% Secure"
-            description="All of our furniture uses the best materials and choices"
-          />
-
-          <FeatureItem
-            icon={truck}
-            alt="truck"
-            title="Free Shipping"
-            description="All of our furniture uses the best materials and choices"
-          />
+        {ITEMS.map((item) => (
+            <FeatureItem
+              id={item.id}
+              icon={item.icon}
+              alt={item.alt}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </div>
       </div>
     </div>

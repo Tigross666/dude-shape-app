@@ -17,10 +17,10 @@ export const Furniture = () => {
       </div>
 
       <div className={styles.vector}>
-        <Button size="vector" presets="custom">
+        <Button size="vector" presets="arrow">
           <Icon src={vectorLeft} alt="vector left" />
         </Button>
-        <Button size="vector" presets="custom">
+        <Button size="vector" presets="arrow">
           <Icon src={vectorRight} alt="vector right" />
         </Button>
       </div>

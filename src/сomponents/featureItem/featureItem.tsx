@@ -1,7 +1,8 @@
 import styles from "./featureItem.module.css";
 import { Icon } from "../icon/icon";
 
-interface FeatureItemProps {
+export interface FeatureItemProps {
+  id: string;
   icon: string;
   alt: string;
   title: string;
@@ -9,7 +10,7 @@ interface FeatureItemProps {
   className?: string;
 }
 
-const FeatureItem = ({ icon, alt, title, description, className }: FeatureItemProps) => {
+const FeatureItem = ({icon, alt, title, description, className }: FeatureItemProps) => {
   return (
     <div className={` ${styles.elements} ${className || ""}`}>
       <div className={styles.elementIcons}>

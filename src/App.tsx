@@ -3,6 +3,7 @@ import { Description } from "./сomponents/description/description";
 import { Companies } from "./сomponents/companies/companies"
 import { Sofa } from "./сomponents/sofa/sofa"
 import { Furniture } from "./сomponents/furniture/furniture"
+import { ProductCard } from "./сomponents/card/card";
 import styles from "./app.module.css";
 
 
@@ -14,6 +15,7 @@ function App() {
       <Companies />
       <Sofa />
       <Furniture />
+      <ProductCard />
     </div>
   );
 }

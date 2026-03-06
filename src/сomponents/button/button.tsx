@@ -5,8 +5,8 @@ import type { PropsWithChildren } from "react"
 
 interface ButtonProps {
     children: ReactNode
-    size?: 'small' | 'medium' | 'large' | 'vector'
-    presets?: 'dark' | 'light' | 'custom'
+    size?: 'small' | 'medium' | 'large' | 'vector' | 'saveSize'
+    presets?: 'dark' | 'light' | 'arrow' | 'save' | 'share'
     
 }
 

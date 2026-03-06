@@ -23,7 +23,7 @@
 
 .dark {
   background-color: #244d4d;
-  color: FFFFFF;
+  color: #FFFFFF;
 }
 
 .light {
@@ -36,8 +36,25 @@
   height: 40px;
 }
 
-.custom {
+.saveSize {
+  width: 26;
+  height: 26;
+}
+
+.arrow {
   background-color: #f4f6f6;
   border-radius: 50%;
   border: none;
+}
+
+.save {
+  border-radius: 50%;
+  border: none;
+  background-color: #EF5423;
+}
+
+.share {
+  border-radius: 50%;
+  border: none;
+  background-color: #ECF4FF;
 }
