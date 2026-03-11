@@ -1,8 +1,14 @@
 .furniture {
-  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 140px;
   gap: 300px;
+}
+
+.titleAndVector {
+  display: flex;
+
+  justify-content: space-between;
 }
 
 .title {
@@ -31,4 +37,9 @@
   height: 40px;
   border-radius: 50%;
   border: none;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
 }

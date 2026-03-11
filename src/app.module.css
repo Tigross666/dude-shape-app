@@ -1,4 +1,17 @@
 .root {
-    font-family: "Montserrat","DM Sans", sans-serif;
-    padding-inline: 120px;
+  font-family: "Montserrat", "DM Sans", sans-serif;
+  padding-inline: 120px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
 }

@@ -18,12 +18,12 @@
 .large {
   font-size: 20px;
   line-height: 25px;
-  padding: 15px 25;
+  padding: 15px 25px;
 }
 
 .dark {
   background-color: #244d4d;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .light {
@@ -36,9 +36,9 @@
   height: 40px;
 }
 
-.saveSize {
-  width: 26;
-  height: 26;
+.like {
+  width: 30px;
+  height: 30px;
 }
 
 .arrow {
@@ -47,14 +47,14 @@
   border: none;
 }
 
-.save {
+.favorites {
   border-radius: 50%;
   border: none;
-  background-color: #EF5423;
+  background-color: #ef5423;
 }
 
 .share {
   border-radius: 50%;
   border: none;
-  background-color: #ECF4FF;
+  background-color: #ecf4ff;
 }

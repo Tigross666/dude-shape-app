@@ -1,11 +1,7 @@
-.root {
-  padding: 44px 120px;
-  font-family: "Montserrat", sans-serif;
-}
-
 .header {
   display: flex;
   align-items: center;
+  margin-top: 44px;
 }
 
 .title {

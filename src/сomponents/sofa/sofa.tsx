@@ -1,6 +1,6 @@
 import { Icon } from "../icon/icon";
 import FeatureItem from "../featureItem/featureItem";
-import { ITEMS } from "../sofa/constants"
+import { ITEMS } from "../sofa/constants";
 import styles from "./sofa.module.css";
 import sofa from "../../assets/sofa.png";
 
@@ -12,7 +12,7 @@ export const Sofa = () => {
       <div>
         <div>
           <h1 className={styles.name}>About Us</h1>
-          <p>
+          <p className={styles.paragraph}>
             All of our furniture uses the best materials and <br />
             choices for our customers.All of our furniture <br />
             uses the best materials
@@ -20,7 +20,7 @@ export const Sofa = () => {
         </div>
 
         <div className={styles.information}>
-        {ITEMS.map((item) => (
+          {ITEMS.map((item) => (
             <FeatureItem
               id={item.id}
               icon={item.icon}

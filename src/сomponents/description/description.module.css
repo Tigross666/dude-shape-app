@@ -2,6 +2,7 @@
   display: flex;
   height: 560px;
   text-align: left;
+  margin-top: 26px;
 }
 
 .text {
@@ -13,5 +14,6 @@
 
 .paragraph {
   font-size: 20px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }

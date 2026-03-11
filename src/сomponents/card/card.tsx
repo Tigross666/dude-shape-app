@@ -1,37 +1,39 @@
-import interiorOne from "../../assets/interiorOne.png";
-import interiorTwo from "../../assets/interiorTwo.png";
-import interiorThree from "../../assets/interiorThree.png";
+import styles from "./card.module.css";
+import { Icon } from "../icon/icon";
+import { Button } from "../button/button";
 import like from "../../assets/like.svg";
 import share from "../../assets/share.svg";
-import { Card } from "./constants";
-import styles from "./card.module.css";
 
-export const ProductCard = () => {
+export interface CardProps {
+  title: string;
+  price: number;
+  image: { url: string; alt: string };
+}
+
+export const Card = ({ title, price, image }: CardProps) => {
   return (
-    <div className={styles.productCards}>
-      <Card
-        productName="White Swan Chair"
-        productPrice={40}
-        imageUrl={interiorOne}
-        likeIcon={like}
-        shareIcon={share}
-      />
+    <div className={styles.card}>
+      <img src={image.url} alt={image.alt} />
+      <div className={styles.content}>
+        <div className={styles.titleSection}>
+          <h3 className={styles.title}>{title}</h3>
+          <div className={styles.activityButtons}>
+            <Button size="like" presets="favorites">
+              <Icon src={like} alt="like" />
+            </Button>
+            <Button size="like" presets="share">
+              <Icon src={share} alt="share" />
+            </Button>
+          </div>
+        </div>
 
-      <Card
-        productName="White Swan Chair"
-        productPrice={40}
-        imageUrl={interiorTwo}
-        likeIcon={like}
-        shareIcon={share}
-      />
-
-      <Card
-        productName="White Swan Chair"
-        productPrice={40}
-        imageUrl={interiorThree}
-        likeIcon={like}
-        shareIcon={share}
-      />
+        <div className={styles.buySection}>
+          <p className={styles.price}>${price}</p>
+          <Button size="small" presets="dark">
+            Buy Now
+          </Button>
+        </div>
+      </div>
     </div>
   );
 };

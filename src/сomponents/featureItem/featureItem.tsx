@@ -5,12 +5,18 @@ export interface FeatureItemProps {
   id: string;
   icon: string;
   alt: string;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   className?: string;
 }
 
-const FeatureItem = ({icon, alt, title, description, className }: FeatureItemProps) => {
+const FeatureItem = ({
+  icon,
+  alt,
+  title,
+  description,
+  className,
+}: FeatureItemProps) => {
   return (
     <div className={` ${styles.elements} ${className || ""}`}>
       <div className={styles.elementIcons}>

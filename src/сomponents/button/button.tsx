@@ -1,19 +1,24 @@
-import type { ReactNode } from "react"
-import styles from "./button.module.css"
-import type { PropsWithChildren } from "react"
+import type { ButtonHTMLAttributes } from "react";
+import styles from "./button.module.css";
+import type { PropsWithChildren } from "react";
 
-
-interface ButtonProps {
-    children: ReactNode
-    size?: 'small' | 'medium' | 'large' | 'vector' | 'saveSize'
-    presets?: 'dark' | 'light' | 'arrow' | 'save' | 'share'
-    
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  size?: "small" | "medium" | "large" | "vector" | "like";
+  presets?: "dark" | "light" | "arrow" | "favorites" | "share";
 }
 
-export const Button = ({ children, size='small', presets='light' }: PropsWithChildren <ButtonProps>) => {
-    return (
-        <button className={`${styles.root} ${styles[size]} ${styles[presets]}`}>
-            {children}
-        </button>
-    )
-}
+export const Button = ({
+  children,
+  size = "small",
+  presets = "light",
+  ...props
+}: PropsWithChildren<ButtonProps>) => {
+  return (
+    <button
+      className={`${styles.root} ${styles[size]} ${styles[presets]}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
