@@ -19,7 +19,7 @@ export const Footer = () => {
           <h3>Follow Us :</h3>
           <div className={styles.socialMedia}>
             {MEDIA.map((item) => (
-              <FeatureItem
+              <FeatureItem className={styles.links}
                 key={item.id}
                 id={item.id}
                 icon={item.icon}
@@ -61,7 +61,7 @@ export const Footer = () => {
               size="vector"
               presets="arrow"
             >
-              <Icon src={arrow} />
+              <Icon src={arrow}/>
             </Button>
           </div>
         </div>

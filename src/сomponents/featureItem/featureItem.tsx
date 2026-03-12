@@ -20,7 +20,7 @@ const FeatureItem = ({
   return (
     <div className={` ${styles.elements} ${className || ""}`}>
       <div className={styles.elementIcons}>
-        <Icon src={icon} alt={alt} />
+        <Icon src={icon} alt={alt} className={className}/>
       </div>
       <div>
         <h2 className={styles.title}>{title}</h2>
