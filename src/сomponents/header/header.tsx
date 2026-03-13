@@ -1,6 +1,6 @@
 import { Navigation } from "../navigation/navigation";
-import loupeImage from '../../assets/loupe.svg'
-import menuImage from '../../assets/menu.svg'
+import loupeImage from "../../assets/loupe.svg";
+import menuImage from "../../assets/menu.svg";
 import styles from "./header.module.css";
 
 export const Header = () => {

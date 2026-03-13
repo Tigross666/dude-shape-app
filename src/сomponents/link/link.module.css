@@ -1,4 +1,9 @@
 .root {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: white;
+}
+
+.dark {
+  text-decoration: none;
+  color: black;
 }
