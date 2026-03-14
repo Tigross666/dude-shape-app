@@ -1,17 +1,56 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 44px;
+  width: 100%;
 }
 
 .title {
   font-size: 24px;
   color: #244d4d;
   flex-shrink: 0;
+  margin: 0;
+  white-space: nowrap;
 }
 
 .tools {
   display: flex;
   gap: 26px;
   flex-shrink: 0;
+  align-items: center;
+}
+
+.tools img {
+  cursor: pointer;
+  display: block;
+}
+
+/* Мобильные устройства */
+
+@media (max-width: $breakpoint-mobile-max) {
+  .root {
+    padding-inline: 20px;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .tools {
+    gap: 15px;
+  }
+
+  .tools img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navigation {
+    display: none;
+  }
 }

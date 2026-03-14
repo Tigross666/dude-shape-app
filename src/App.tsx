@@ -1,3 +1,5 @@
+import "./shared/styles/global.css";
+
 import { Header } from "./сomponents/header/header";
 import { Description } from "./сomponents/description/description";
 import { Companies } from "./сomponents/companies/companies";

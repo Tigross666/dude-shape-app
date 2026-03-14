@@ -2,7 +2,6 @@
   display: flex;
   margin-top: 140px;
   justify-content: space-between;
-  
 }
 
 .about {
@@ -25,4 +24,27 @@
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+}
+
+/* Мобильные устройства */
+
+@media (max-width: $breakpoint-mobile-max) {
+  .root {
+    padding-inline: 20px;
+  }
+
+  .sofa {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  .logos {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 86%;
+    display: block;
+  }
 }

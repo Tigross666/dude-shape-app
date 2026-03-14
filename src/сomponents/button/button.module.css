@@ -4,21 +4,23 @@
 }
 
 .small {
-  font-size: 12px;
+  @mixin responsive font-size, 10, 12;
   line-height: 21px;
   padding: 5px 14px;
 }
 
 .medium {
-  font-size: 16px;
+  @mixin responsive font-size, 12, 16;
+
   line-height: 22px;
-  padding: 15px 30px;
+  @mixin responsive padding, 10, 20;
 }
 
 .large {
-  font-size: 20px;
+  @mixin responsive font-size, 14, 20;
+
   line-height: 25px;
-  padding: 15px 25px;
+  @mixin responsive padding, 10, 20;
 }
 
 .dark {
@@ -32,8 +34,8 @@
 }
 
 .vector {
-  width: 40px;
-  height: 40px;
+  @mixin responsive width, 20, 40;
+  @mixin responsive height, 20, 40;
 }
 
 .like {

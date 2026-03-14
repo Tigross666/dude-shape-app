@@ -1,15 +1,38 @@
+.root {
+  @mixin responsive padding-block-start, 50, 175;
+}
+
 .title {
-  display: block;
   text-align: center;
-  font-size: 32px;
+
+  @mixin responsive font-size, 24, 32;
+
   color: #244d4d;
-  margin: 140px auto;
 }
 
 .logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  @mixin responsive gap, 50, 100;
   margin: 40px auto;
+}
+
+/* Мобильные устройства */
+
+@media (max-width: $breakpoint-mobile-max) {
+  .root {
+    padding-inline: 20px;
+  }
+
+  .companies {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
 }

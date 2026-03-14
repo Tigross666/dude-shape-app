@@ -36,3 +36,34 @@
   width: 474px;
   flex-shrink: 0;
 }
+
+.mobileSlider {
+  display: none;
+  width: 100%;
+}
+
+.mobileSlider :global(.swiper) {
+  height: 300px; /* или нужная вам высота */
+}
+
+.mobileSlider :global(.swiper-slide) {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: $breakpoint-mobile-max) {
+  .contentWrapper {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .grid {
+    display: none; 
+  }
+
+  .mobileSlider {
+    display: block; 
+  }
+}
