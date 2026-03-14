@@ -1,9 +1,11 @@
+.companies {
+  margin-top: 175px;
+}
+
 .title {
-  display: block;
   text-align: center;
   font-size: 32px;
   color: #244d4d;
-  margin: 140px auto;
 }
 
 .logos {
@@ -12,4 +14,24 @@
   align-items: center;
   gap: 100px;
   margin: 40px auto;
+}
+
+/* Мобильные устройства */
+
+@media (max-width: 768px) {
+  .root {
+    padding-inline: 20px;
+  }
+
+  .companies {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
 }
