@@ -4,10 +4,12 @@ import chairImage from "../../assets/chair.png";
 
 export const Description = () => {
   return (
-    <div className={styles.description}>
-      <img className={styles.chair} src={chairImage} alt="chair" />
+    <div className={styles.root}>
+      <div className={styles.imgWrap}>
+        <img className={styles.chair} src={chairImage} alt="chair" />
+      </div>
       <div className={styles.text}>
-        <h1>We Help You Make Modern Furniture</h1>
+        <h1 className={styles.title}>We Help You Make Modern Furniture</h1>
         <p className={styles.paragraph}>
           All of our furniture uses the best materials and choices for our
           customers.All of our furniture uses the best materials

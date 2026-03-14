@@ -4,7 +4,7 @@ import styles from "./companies.module.css";
 
 export const Companies = () => {
   return (
-    <div className={styles.companies}>
+    <div className={styles.root}>
       <h2 className={styles.title}>Trusted by 20,000+ companies</h2>
 
       <div className={styles.logos}>

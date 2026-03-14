@@ -6,6 +6,7 @@
 .links {
   margin: 0 auto;
   color: #161616;
+  display: flex;
 }
 
 .navigation {

@@ -14,10 +14,6 @@
   white-space: nowrap;
 }
 
-.navigation {
-  display: flex;
-}
-
 .tools {
   display: flex;
   gap: 26px;
@@ -32,7 +28,7 @@
 
 /* Мобильные устройства */
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-mobile-max) {
   .root {
     padding-inline: 20px;
   }

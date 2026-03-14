@@ -1,25 +1,25 @@
 import { Icon } from "../icon/icon";
 import FeatureItem from "../featureItem/featureItem";
 import { ITEMS } from "../sofa/constants";
-import styles from "./sofa.module.css";
+import css from "./sofa.module.css";
 import sofa from "../../assets/sofa.png";
 
 export const Sofa = () => {
   return (
-    <div className={styles.sofa}>
+    <section className={css.sofa}>
       <Icon src={sofa} alt="sofa" />
 
       <div>
         <div>
-          <h1 className={styles.name}>About Us</h1>
-          <p className={styles.paragraph}>
+          <h1 className={css.name}>About Us</h1>
+          <p className={css.paragraph}>
             All of our furniture uses the best materials and <br />
             choices for our customers.All of our furniture <br />
             uses the best materials
           </p>
         </div>
 
-        <div className={styles.information}>
+        <div className={css.information}>
           {ITEMS.map((item) => (
             <FeatureItem
               id={item.id}
@@ -31,6 +31,6 @@ export const Sofa = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

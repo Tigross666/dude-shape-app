@@ -1,0 +1,9 @@
+@import "./mixins/typography.css";
+
+html {
+  font-size: 1vw;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
