@@ -1,8 +1,8 @@
 .sofa {
   display: flex;
+  flex-direction: column;
   margin-top: 140px;
   justify-content: space-between;
-  
 }
 
 .about {
