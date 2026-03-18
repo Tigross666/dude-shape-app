@@ -1,0 +1,13 @@
+.nav {
+  margin: 0 auto;
+  color: var(--color-text-primary);
+}
+
+.list {
+  font-size: var(--font-size-base);
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
