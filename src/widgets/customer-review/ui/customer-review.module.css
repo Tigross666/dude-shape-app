@@ -1,0 +1,41 @@
+.section {
+  display: flex;
+  gap: 100px;
+  margin-top: var(--spacing-3xl);
+  align-items: center;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: var(--spacing-md);
+}
+
+.reviewerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviewerInfo h3,
+.rating p {
+  margin: 0;
+  font-weight: normal;
+}
+
+.rating {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.rating p {
+  line-height: 1;
+}
