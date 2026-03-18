@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-top: var(--spacing-3xl);
+  color: var(--color-text-primary);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.tabLabel {
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.content {
+  display: flex;
+  gap: 135px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-xl);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 474px;
+  flex-shrink: 0;
+}

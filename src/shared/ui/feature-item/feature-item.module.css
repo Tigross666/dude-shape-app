@@ -1,0 +1,22 @@
+.element {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: 30px;
+}
+
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  margin-top: 0;
+  color: var(--color-primary);
+}
+
+.description {
+  font-size: 18px;
+  margin-top: 14px;
+  white-space: pre-line;
+}

@@ -1,0 +1,42 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--spacing-3xl);
+  background-color: var(--color-surface);
+  padding-top: 65px;
+}
+
+.description {
+  text-align: center;
+  padding-top: var(--spacing-md);
+}
+
+.inputContainer {
+  display: flex;
+  width: 471px;
+  height: 60px;
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-white);
+  padding: 10px;
+  align-items: center;
+  margin: var(--spacing-lg) 0;
+}
+
+.emailInput {
+  flex: 1;
+  height: 48px;
+  padding: 0 var(--spacing-sm);
+  border: none;
+  font-size: var(--font-size-base);
+}
+
+.mailIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.emailInput::placeholder {
+  color: #999;
+}

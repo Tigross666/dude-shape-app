@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 44px;
+}
+
+.logo {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.tools {
+  display: flex;
+  gap: 26px;
+  flex-shrink: 0;
+}

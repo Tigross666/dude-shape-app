@@ -1,0 +1,15 @@
+@import '../../shared/config/tokens.css';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  width: 100%;
+  overflow-x: hidden;
+}
