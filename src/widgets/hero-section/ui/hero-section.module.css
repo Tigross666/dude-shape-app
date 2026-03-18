@@ -1,0 +1,19 @@
+.hero {
+  display: flex;
+  height: 560px;
+  text-align: left;
+  margin-top: 26px;
+}
+
+.text {
+  background-color: var(--color-primary-dark);
+  font-size: 30px;
+  padding: var(--spacing-xl) 100px;
+  color: var(--color-white);
+}
+
+.paragraph {
+  font-size: var(--font-size-lg);
+  padding-top: var(--spacing-md);
+  padding-bottom: 30px;
+}

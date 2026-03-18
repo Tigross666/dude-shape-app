@@ -1,0 +1,15 @@
+.title {
+  display: block;
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  margin: var(--spacing-3xl) auto;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: var(--spacing-lg) auto;
+}

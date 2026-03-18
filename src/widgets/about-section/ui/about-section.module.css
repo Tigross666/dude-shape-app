@@ -1,0 +1,20 @@
+.section {
+  display: flex;
+  margin-top: var(--spacing-3xl);
+  justify-content: space-between;
+}
+
+.heading {
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.paragraph {
+  padding-top: var(--spacing-md);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--spacing-lg);
+}
